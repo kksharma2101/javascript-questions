@@ -117,6 +117,9 @@ There is javascript interview quetions.
    }
    }
    return data[0];
+
+   <!-- second way -->
+
    if (data.length === 0) {
    return data;
    }
