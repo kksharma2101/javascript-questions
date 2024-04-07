@@ -133,54 +133,54 @@ There is javascript interview quetions.
    console.log(returnMinimum(2, 3, 1, 4, 5, 6, 45));
    console.log(returnMinimum(210, 542, 362, 78, 425, 536, 35));
 
-   10. Given three angles of a triange, your function should return if it is a scalene, isosceles, equilateral triangle or not a triangle at all.
-       Example:
-       Input: typeOfTriangle(30, 60, 90) ––> Output: Scalene Triangle
+10. Given three angles of a triange, your function should return if it is a scalene, isosceles, equilateral triangle or not a triangle at all.
+    Example:
+    Input: typeOfTriangle(30, 60, 90) ––> Output: Scalene Triangle
 
-       function findTringle(...data) {
-       let triangle = null;
-       if (data[0] === data[1] && data[2]) {
-       return (triangle = "Equilateral");
-       } else if (
-       data[0] === data[1] ||
-       data[1] === data[2] ||
-       data[0] === data[2]
-       ) {
-       return (triangle = "Isosceles");
-       } else if (data[0] !== data[1] || data[1] !== data[2] || data[2] || data[0]) {
-       return (triangle = "scalene");
-       }
-       return triangle;
-       }
-       console.log(findTringle(202, 21, 20));
+    function findTringle(...data) {
+    let triangle = null;
+    if (data[0] === data[1] && data[2]) {
+    return (triangle = "Equilateral");
+    } else if (
+    data[0] === data[1] ||
+    data[1] === data[2] ||
+    data[0] === data[2]
+    ) {
+    return (triangle = "Isosceles");
+    } else if (data[0] !== data[1] || data[1] !== data[2] || data[2] || data[0]) {
+    return (triangle = "scalene");
+    }
+    return triangle;
+    }
+    console.log(findTringle(202, 21, 20));
 
-   11. Given an array and an item, your function should return the index at which the item is present.
-       Example:
-       Input: indexOf([1,6,3,5,8,9], 3) ––> Output: 2
+11. Given an array and an item, your function should return the index at which the item is present.
+    Example:
+    Input: indexOf([1,6,3,5,8,9], 3) ––> Output: 2
 
-       function findIndex(item, num) {
-       for (let i = 0; i < item.length; i++) {
-       if (item[i] == num) {
-       return i;
-       }
-       }
-       }
-       console.log(findIndex([1, 6, 3, 5, 8, 9], 8));
+    function findIndex(item, num) {
+    for (let i = 0; i < item.length; i++) {
+    if (item[i] == num) {
+    return i;
+    }
+    }
+    }
+    console.log(findIndex([1, 6, 3, 5, 8, 9], 8));
 
-   12. Given an array and two numbers, your function should replace all entries of first number in an array with the second number.
-       Example:
-       Input: replace([1,5,3,5,6,8], 5, 10) ––> Output: [1,10,3,10,6,8]
+12. Given an array and two numbers, your function should replace all entries of first number in an array with the second number.
+    Example:
+    Input: replace([1,5,3,5,6,8], 5, 10) ––> Output: [1,10,3,10,6,8]
 
-       function replaceNumber(data, num1, num2) {
-       for (let i = 0; i < data.length; i++) {
-       if (data[i] == num1) {
-       data[i] = num2;
-       }
-       }
-       console.log(data);
-       }
-       console.log(replaceNumber([1, 5, 3, 5, 6, 8], 5, 10));
+    function replaceNumber(data, num1, num2) {
+    for (let i = 0; i < data.length; i++) {
+    if (data[i] == num1) {
+    data[i] = num2;
+    }
+    }
+    console.log(data);
+    }
+    console.log(replaceNumber([1, 5, 3, 5, 6, 8], 5, 10));
 
-   13. Given two arrays, your function should return single merged array.
-       Example: Input: mergeArray([1,3,5], [2,4,6]) ––> Output: [1,3,5,2,4,6]
-       function mergeArray() {}
+13. Given two arrays, your function should return single merged array.
+    Example: Input: mergeArray([1,3,5], [2,4,6]) ––> Output: [1,3,5,2,4,6]
+    function mergeArray() {}
