@@ -162,4 +162,166 @@
 
 // 13.== Given two arrays, your function should return single merged array.
 // Example: Input: mergeArray([1,3,5], [2,4,6]) ––> Output: [1,3,5,2,4,6]
-function mergeArray() {}
+// function mergeArray(data1, data2) {
+//   return data1.concat(data2);
+// }
+// console.log(mergeArray([1, 3, 5], [2, 4, 6]));
+
+// 14.== Given a string and an index, your function should return the character present at that index in the string.
+// Example:
+// Input: charAt("neoGcamp", 4) ––> Output: c
+// function charAt(value, index) {
+//   for (const key in value) {
+//     if (key == index) {
+//       return value[key];
+//     }
+//   }
+// }
+// console.log(charAt("neoGcamp", 4));
+
+// 15.== Given two dates, your function should return which one comes before the other.
+// Example:
+// Input: minDate('02/05/2021', '24/01/2021') ––> Output: 24/01/2021
+// function minDate(date1, date2) {
+//   const [day1, month1, year1] = date1.split("/").map(Number);
+//   const [day2, month2, year2] = date2.split("/").map(Number);
+
+//   if (year1 <= year2 && month1 <= month2 && day1 < day2) {
+//     return date1;
+//   } else if (year1 == year2 && month1 == month2 && day1 == day2) {
+//     return "Both are same";
+//   } else {
+//     return date2;
+//   }
+// }
+// console.log(minDate("03/05/2021", "02/05/2021"));
+
+// 16.== Write a function which generates a secret code from a given string, by shifting characters of alphabet by N places. Example:
+// Input: encodeString("neogcamp", 2) ––> Output: pgqiecor
+// Explanation: 2 represents shifting alphabets by 2 places. a –> c, b –> d, c –> e and so on.
+
+// function stringEncoded(val) {
+//   let decoded = val.slice(0, 3);
+//   return decoded;
+// }
+// console.log(stringEncoded("neogcamp"));
+
+// 17.== Given a sentence, return a sentence with first letter of all words as capital.
+// Example:
+// Input: toSentenceCase('we are neoGrammers') ––> Output: We Are NeoGrammers
+
+// function toCapitalize(tense) {
+//   return tense
+//     .split(" ")
+//     .map((pre) => pre.charAt(0).toUpperCase() + pre.slice(1))
+//     .join(" ");
+// }
+// console.log(toCapitalize("we are neoGrammers"));
+
+// 18.== Given an array of numbers, your function should return an array in the ascending order.
+// Example:
+// Input: sortArray([100,83,32,9,45,61]) ––> Output: [9,32,45,61,83,100]
+// function numAscendeing(data) {
+//   return data.sort((a, b) => a - b);
+// }
+// console.log(numAscendeing([100, 83, 32, 9, 45, 61]));
+
+// 19.== Given a sentence, your function should reverse the order of characters in each word, keeping same sequence of words.
+// Example:
+// Input: reverseCharactersOfWord('we are neoGrammers') –––> Output: ew era sremmarGoen
+// function reverseString(str) {
+//   return str
+//     .split(" ")
+//     .map((pre) => pre.split("").reverse().join(""))
+//     .join(" ");
+// }
+// console.log(reverseString("we are neoGrammers"));
+
+// 20.== Write a JavaScript program to calculate the simple interest given P,R,T with the given formula. Formula: SI = (P * T * R) / 100 Where: P = principal amount T = time R = rate SI = simple interest
+// Input: P=100, R=6%, T=2
+// Output: 12
+// function simpleInterest(val) {
+//   let data = val;
+//   let si = (data.amount * data.rate * data.time) / 100;
+//   return si;
+// }
+// console.log(simpleInterest({ amount: 100, rate: 6, time: 2 }));
+
+// 21.== Write a program to calculate the kinetic energy of a body with mass 'm' and volume 'v'.
+// Formula : 0.5 * m * v * v
+// function calculateKE(m, v) {
+//   let kineticEnergy = 0.5 * m * v * v;
+//   return kineticEnergy;
+// }
+// console.log(calculateKE(8, 6));
+
+// 22.== Write a program to convert Fahrenheit to Celsius. For Fahrenheit to Celsius conversion use: C = (F - 32) * 5/9 'F' and 'C' are the temperatures on the Fahrenheit scale and Celsius scale respectively.
+// input: 56    output: 13.3333
+// function convertTem(F) {
+//   let result = ((F - 32) * 5) / 9;
+//   return result;
+// }
+// console.log(convertTem(56));
+
+// 23.== Calculate the area, perimeter of a square of side 'a'. Also, calculate the surface area and the volume of a cube of side 'a'.
+// Formula : Area: a*a  ,Perimeter: 4*a  ,Surface Area: 6*a*a  ,Volume: a*a*a
+// function calculateArea(a) {
+//   let area = a * a;
+//   let perimeter = 4 * a;
+//   let surfaceArea = 6 * a * a;
+//   let volume = a * a * a;
+//   return `area : ${area}, perimeter : ${perimeter}, surface area : ${surfaceArea}, Volume : ${volume}`;
+// }
+// console.log(calculateArea(4));
+
+// 24.== Given the Cost Price(CP) and Selling Price(SP) of a product. Write a Program to Calculate the Profit or Loss.
+// Input: CP = 1500, SP = 2000,  Output: 500 Profit
+// Input: CP = 3125, SP = 1125, Output: 2000 Loss
+// function findProfitOrLoss(sp, cp) {
+//   let profit = (sp - cp) / 100;
+//   return profit;
+// }
+// console.log(findProfitOrLoss(2000, 1500));
+
+// 25.== Write a program to calculate sum of N natural digits, as input by the users?
+// Enter a positive integer: 100, Sum = 5050
+// function sumOfNaturalNum(num) {
+//   let res = (num * (num + 1)) / 2;
+//   return res;
+// }
+// console.log(sumOfNaturalNum(100));
+
+// 26.== Write a Program to Print N Odd Number in Descending Order.
+// Input: 4; Output: 7; 5; 3; 1;
+
+// function printOddNum(num) {
+//   let count = num;
+//   let oddNumber = 2 * num - 1; // The first odd number to start from
+
+//   while (count > 0) {
+//     console.log(oddNumber);
+//     oddNumber -= 2;
+//     count--;
+//   }
+// }
+// console.log(printOddNum(4));
+
+// 27.== Write a JavaScript program to compute the sum of all digits that occur in a given string.
+// Input: 1234, Output: 1+2+3+4 = 10
+function sumOfAllDigits(num) {
+  let sum = 0;
+
+  // Loop through each character in the string
+  for (var i = 0; i < num.length; i++) {
+    let char = num.charAt(i);
+
+    // Check if the character is a digit
+    if (!isNaN(parseInt(char))) {
+      // If it's a digit, add it to the sum
+      sum += parseInt(char);
+    }
+  }
+
+  return sum;
+}
+console.log(sumOfAllDigits("1234"));
