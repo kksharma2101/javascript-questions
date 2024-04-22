@@ -308,20 +308,47 @@
 
 // 27.== Write a JavaScript program to compute the sum of all digits that occur in a given string.
 // Input: 1234, Output: 1+2+3+4 = 10
-function sumOfAllDigits(num) {
-  let sum = 0;
 
-  // Loop through each character in the string
-  for (var i = 0; i < num.length; i++) {
-    let char = num.charAt(i);
+// function sumOfAllDigits(num) {
+//   let sum = 0;
+//   for (let i = 0; i <= num.length; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+// console.log(sumOfAllDigits(1234));
 
-    // Check if the character is a digit
-    if (!isNaN(parseInt(char))) {
-      // If it's a digit, add it to the sum
-      sum += parseInt(char);
-    }
+// ========> Find square <==========
+// function SquareFind(num) {
+//   const integerSquares = [];
+//   console.log(num);
+//   for (let i = 0; i <= num; i++) {
+//     let square = i * i;
+//     if (square <= num) {
+//       integerSquares.push(square);
+//     }
+//   }
+//   return integerSquares;
+// }
+// console.log(SquareFind(50));
+
+// 28. == Write a JavaScript program that reverses a number.
+// Input: 32243; Output: 34223;
+
+// function reverseNum(num) {
+//   let rev = num.toString().split("").reverse().join("");
+//   return rev;
+// }
+// console.log(reverseNum(32243));
+
+// 29. == Write a Program to cyclically Rotate a Number by X positions in the left direction, as provided by the user.
+// Enter a Number : 1234; Enter the Number of Rotations : 2; Output : 3412
+
+function numRotate(val) {
+  let res = [];
+  let position = 2;
+  for (let i = position; i <= val.length; i++) {}
+  if (i == val.length) {
   }
-
-  return sum;
 }
-console.log(sumOfAllDigits("1234"));
+console.log(numRotate(1234));

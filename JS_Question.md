@@ -321,4 +321,40 @@ There is javascript interview quetions.
     }
     console.log(printOddNum(4));
 
-26.
+26. Write a JavaScript program to compute the sum of all digits that occur in a given string.
+    // Input: 1234, Output: 1+2+3+4 = 10
+
+    function sumOfAllDigits(num) {
+    let sum = 0;
+    for (let i = 0; i <= num.length; i++) {
+    sum += i;
+    }
+    return sum;
+    }
+    console.log(sumOfAllDigits(1234));
+
+27. Find square
+
+    function SquareFind(num) {
+    const integerSquares = [];
+    console.log(num);
+    for (let i = 0; i <= num; i++) {
+    let square = i \* i;
+    if (square <= num) {
+    integerSquares.push(square);
+    }
+    }
+    return integerSquares;
+    }
+    console.log(SquareFind(50));
+
+28. Write a JavaScript program that reverses a number.
+    // Input: 32243; Output: 34223;
+
+    function reverseNum(num) {
+    let rev = num.toString().split("").reverse().join("");
+    return rev;
+    }
+    console.log(reverseNum(32243));
+
+29.
