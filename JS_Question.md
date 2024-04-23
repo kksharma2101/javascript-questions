@@ -357,4 +357,38 @@ There is javascript interview quetions.
     }
     console.log(reverseNum(32243));
 
-29.
+29. Write a Program to cyclically Rotate a Number by X positions in the left direction, as provided by the user.
+    // Enter a Number : 1234; Enter the Number of Rotations : 2; Output : 3412
+
+    function numRotate(val) {
+    let newVal = val.toString().split("");
+    let res = [];
+    let x = 4;
+    for (let i = x; i <= newVal.length - 1; i++) {
+    let temp = newVal[i];
+    res.push(temp);
+    }
+    for (let i = 0; i < x; i++) {
+    res.push(newVal[i]);
+    }
+    return res.toString();
+    }
+    console.log(numRotate(123495708));
+
+30. Write a Program to convert Decimal to Binary.
+    // Example: 5; Binary number of 5 = 101;
+
+    function decimalToBinary(val) {
+    if (val == 0) {
+    return 0;
+    }
+    let binary = "";
+    while (val > 0) {
+    binary = (val % 2) + binary;
+    val = Math.floor(val / 2);
+    }
+    return binary;
+    }
+    console.log(decimalToBinary(57));
+
+31.
