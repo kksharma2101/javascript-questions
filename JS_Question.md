@@ -391,4 +391,27 @@ There is javascript interview quetions.
     }
     console.log(decimalToBinary(57));
 
-31.
+31. Write a program that reads two strings and append first string to the second. So if first string is Good second string is Morning , the program should print MorningGood;
+
+    function appentString(str1, str2) {
+    // let res1 = str2 + str1;
+    let res2 = str2.concat(str1);
+    return res2;
+    }
+    console.log(appentString("Good", "Morning"));
+
+32. Write a program to delete all vowels from a string. Assume string is not more than 80 characters long.
+
+    function removeVowels(str) {
+    let res = str.toString().split("");
+    let result = "";
+    for (let i = 0; i < res.length; i++) {
+    if (res[i] !== "a" && "e" && "i" && "o" && "u") {
+    result += res[i];
+    }
+    }
+    return result.toString().split("");
+    }
+    console.log(removeVowels("abcdefghijklmnopqrstuvwxyz"));
+
+33.

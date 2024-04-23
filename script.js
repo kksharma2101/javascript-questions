@@ -375,5 +375,33 @@
 // }
 // console.log(decimalToBinary(57));
 
-// 31.== Write a Program to Convert Octal to Decimal.
-// Enter an octal number: 116; Octal of Given Number = 78 in decimal
+// 31.== Write a program that reads two strings and append first string to the second. So if first string is Good second string is Morning , the program should print MorningGood;
+
+// function appentString(str1, str2) {
+//   //   let res1 = str2 + str1;
+//   let res2 = str2.concat(str1);
+//   return res2;
+// }
+// console.log(appentString("Good", "Morning"));
+
+//32.== Write a program to delete all vowels from a string. Assume string is not more than 80 characters long
+
+// function removeVowels(str) {
+//   let res = str.toString().split("");
+//   let result = "";
+//   for (let i = 0; i < res.length; i++) {
+//     if (res[i] !== "a" && "e" && "i" && "o" && "u") {
+//       result += res[i];
+//     }
+//   }
+//   return result.toString().split("");
+// }
+// console.log(removeVowels("abcdefghijklmnopqrstuvwxyz"));
+
+// 33.== Write a program to check whether the string is alphanumeric or not , eg:batman@45 contains digit 45
+function checkString(str) {
+  if (str == 1 || 2 || 3 || 4 || 5 || 7 || 6 || 8 || 9 || 0) {
+    return "this is not string";
+  }
+}
+console.log(checkString("batman@45"));
