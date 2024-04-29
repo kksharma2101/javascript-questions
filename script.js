@@ -399,9 +399,65 @@
 // console.log(removeVowels("abcdefghijklmnopqrstuvwxyz"));
 
 // 33.== Write a program to check whether the string is alphanumeric or not , eg:batman@45 contains digit 45
-function checkString(str) {
-  if (str == 1 || 2 || 3 || 4 || 5 || 7 || 6 || 8 || 9 || 0) {
-    return "this is not string";
-  }
-}
-console.log(checkString("batman@45"));
+// function checkString(str) {
+//   if (str == 1 || 2 || 3 || 4 || 5 || 7 || 6 || 8 || 9 || 0) {
+//     return "this is not string";
+//   }
+// }
+// console.log(checkString("batman@45"));
+
+// 34.== A program that reads three strings and prints the longest and smallest one
+
+// function findLongest(str1, str2, str3) {
+//   if (str1.length > str2.length && str3.length) {
+//     return str1;
+//   } else if (str2.length > str1.length && str3.length) {
+//     return str2;
+//   } else if (str3.length > str1.length && str2.length) {
+//     return str3;
+//   } else {
+//     return "all are length is equal";
+//   }
+// }
+// console.log(findLongest("kamal", "kumar", "sharma"));
+
+// 35.== A program that counts number of vowels and consonants in a String?
+
+// function countVowelsAndConsonants(str) {
+//   let vowels = "aeiouAEIOU";
+//   let vCount = 0;
+//   let cCount = 0;
+//   for (let i = 0; i < str.length; i++) {
+//     let char = str[i];
+//     if (char.match(/[a-zA-Z]/)) {
+//       if (vowels.includes(char)) {
+//         vCount += 1;
+//       } else {
+//         cCount += 1;
+//       }
+//     }
+//   }
+//   return `vowels: ${vCount} and consonants: ${cCount}`;
+// }
+// console.log(countVowelsAndConsonants("he is developer"));
+
+// 36.== Write a program which receives a string str that calculates the length of a string and return true if the length is greater than 7 without using strlen()
+
+// 37.== Given a string, determine if it is a palindrome, considering only alphanumeric characters.
+
+// function checkPalindrome(str) {
+//   let updateStr = str.replace(/[^a-z]/g, "");
+//   let start = 0;
+//   let end = updateStr.length - 1;
+//   while (start <= end) {
+//     if (updateStr[start] !== updateStr[end]) {
+//       return false;
+//     }
+//     start++;
+//     end--;
+//   }
+//   return true;
+// }
+// console.log(checkPalindrome("kamal574 1 23am ak "));
+
+// 38.==

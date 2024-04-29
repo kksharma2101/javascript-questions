@@ -414,4 +414,41 @@ There is javascript interview quetions.
     }
     console.log(removeVowels("abcdefghijklmnopqrstuvwxyz"));
 
-33.
+33. A program that counts number of vowels and consonants in a String?
+
+    function countVowelsAndConsonants(str) {
+    let vowels = "aeiouAEIOU";
+    let vCount = 0;
+    let cCount = 0;
+    for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (char.match(/[a-zA-Z]/)) {
+    if (vowels.includes(char)) {
+    vCount += 1;
+    } else {
+    cCount += 1;
+    }
+    }
+    }
+    return `vowels: ${vCount} and consonants: ${cCount}`;
+    }
+    console.log(countVowelsAndConsonants("he is developer"));
+
+34. Given a string, determine if it is a palindrome, considering only alphanumeric characters.
+
+    function checkPalindrome(str) {
+    let updateStr = str.replace(/[^a-z]/g, "");
+    let start = 0;
+    let end = updateStr.length - 1;
+    while (start <= end) {
+    if (updateStr[start] !== updateStr[end]) {
+    return false;
+    }
+    start++;
+    end--;
+    }
+    return true;
+    }
+    console.log(checkPalindrome("kamal574 1 23am ak "));
+
+35.
