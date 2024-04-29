@@ -460,4 +460,18 @@
 // }
 // console.log(checkPalindrome("kamal574 1 23am ak "));
 
-// 38.==
+// 38.== For a given input string(str), write a function to print all the possible substrings.Without using substr method
+// function printSubstrings(str) {
+//   // Loop through each character in the string
+//   for (let start = 0; start < str.length; start++) {
+//     for (let end = start + 1; end <= str.length; end++) {
+//       // Print substring from start index to end index
+//       console.log(str.slice(start, end));
+//     }
+//   }
+// }
+// // Example usage:
+// const inputString = "hello";
+// printSubstrings(inputString);
+
+// 39.== Write a program that removes the time from the given date string "Wed April 15, 7pm". It should return only the date without the time.
