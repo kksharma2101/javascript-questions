@@ -475,3 +475,36 @@
 // printSubstrings(inputString);
 
 // 39.== Write a program that removes the time from the given date string "Wed April 15, 7pm". It should return only the date without the time.
+
+// function removeTime(dateString) {
+//   // Parse the date string
+//   let date = new Date(dateString);
+//   // Format the date without time
+//   let options = { weekday: "short", month: "long", day: "numeric" };
+//   console.log(options);
+//   let formattedDate = date.toLocaleDateString("en-US", options);
+//   return formattedDate;
+// }
+// let dateString = "Wed April 15, 7pm";
+// let result = removeTime(dateString);
+// console.log(result);
+
+// 40.== Write a program that masks all but last four characters of the string "5565534276455423" to '#';
+// function maskCharacter(str) {
+//   let res = [];
+//   for (let i = 0; i <= str.length - 1; i++) {
+//     if (i < str.length - 4) {
+//       res.push((str[i] = "#"));
+//     } else {
+//       res.push(str[i]);
+//     }
+//   }
+//   return res.toString();
+// }
+// console.log(maskCharacter("5565534276455423"));
+
+// 41.== Given a string "tic tac toe is a fun game" convert the first 6 characters to capital case;
+function convertCapital(str) {
+  console.log(str < 6);
+}
+console.log(convertCapital("tic tac toe is a fun game"));

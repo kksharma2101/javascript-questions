@@ -468,4 +468,19 @@ There is javascript interview quetions.
     const inputString = "hello";
     printSubstrings(inputString);
 
-36.
+36. Write a program that masks all but last four characters of the string "5565534276455423" to '#'
+
+    function maskCharacter(str) {
+    let res = [];
+    for (let i = 0; i <= str.length - 1; i++) {
+    if (i < str.length - 4) {
+    res.push((str[i] = "#"));
+    } else {
+    res.push(str[i]);
+    }
+    }
+    return res.toString();
+    }
+    console.log(maskCharacter("5565534276455423"));
+
+37. Given a string "tic tac toe is a fun game" convert the first 6 characters to capital case
