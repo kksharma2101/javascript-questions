@@ -504,7 +504,43 @@
 // console.log(maskCharacter("5565534276455423"));
 
 // 41.== Given a string "tic tac toe is a fun game" convert the first 6 characters to capital case;
-function convertCapital(str) {
-  console.log(str < 6);
-}
-console.log(convertCapital("tic tac toe is a fun game"));
+// function convertCapital(str) {
+//   // let newStr = str.toString().replace(/\s/g, "");
+//   // let res = "";
+//   // for (let i = 0; i < str.length; i++) {
+//   //   if (i <= 6) {
+//   //     res += str[i].toUpperCase();
+//   //   } else {
+//   //     res += str[i];
+//   //   }
+//   // }
+//   // return res;
+//   let result = str.substring(0, 7).toUpperCase().concat(str.substring(7));
+//   return result;
+// }
+// console.log(convertCapital("tic tac toe is a fun game"));
+
+// 42.== Given an input string S and two characters c1 and c2, you need to replace every occurrence of character c1 with character c2 in the given string
+// function replaceCharacters(S, c1, c2) {
+//   // Using regular expression with global flag to replace all occurrences
+//   // let regex = new RegExp(c1, "g");
+//   // return S.replace(regex, c2);
+//   let ans = "";
+//   for (let i = 0; i <= S.length - 1; i++) {
+//     if (S[i] == c1) {
+//       ans += c2;
+//     } else {
+//       ans += S[i];
+//     }
+//   }
+//   return ans;
+// }
+
+// // Example usage:
+// let inputString = "hello world";
+// let char1 = "o";
+// let char2 = "a";
+// let result = replaceCharacters(inputString, char1, char2);
+// console.log(result); // Output: hella warld
+
+// 43.== Given an input string S that contains multiple words, you need to remove all the spaces present in the input string. There can be multiple spaces present after any word
