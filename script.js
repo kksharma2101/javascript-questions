@@ -580,5 +580,59 @@
 // console.log("Max occurring character is: " + getMaxOccurringChar(str));
 
 // 45.== Write a program to toggle case of each character of the string "good afternoon" (example: "neogcamp" ⇒ "nEoGcAmP" )
-function toggleCase(str) {}
-console.log(toggleCase("hello world"));
+// function toggleCase(val) {
+//   let str = val.replace(/ /g, "");
+//   let newStr = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if ([i] == 1 || [i] % 2) {
+//       newStr += str[i].toUpperCase();
+//     } else {
+//       newStr += str[i];
+//     }
+//   }
+//   return newStr;
+// }
+// console.log(toggleCase("hello world"));
+
+// 46.== Given a string "how was your day?" and a word "how", write a program that removes the occurrence of the specified word from given sentence. ( input: string⇒"programming camp are amazing",word⇒ "programming"; output:" camp are amazing")
+// function removeFirst(val) {
+//   return val.slice(1);
+// }
+// console.log(removeFirst("I am a programmer"));
+
+// ====== Array ======
+
+// 47.== Find average of an array and display the output.
+// function findAverage(data) {
+//   let avg = 0;
+//   for (let i = 0; i < data.length; i++) {
+//     avg += data[i];
+//   }
+//   return avg / data.length;
+// }
+// console.log(findAverage([12, 45, 3, 47, 6, 24, 36]));
+
+// 48.== Find sum of two arrays.
+// [3,5,2,9,4] = 3+5+2+9+4 = 23;  [6,2,8,1,3] = 6+2+8+1+3 = 20
+// Final Output : 20+23 = 43
+
+// function findSum(arr1, arr2) {
+//   let newArr1 = 0;
+//   let newArr2 = 0;
+//   for (let i in arr1) {
+//     newArr1 += arr1[i];
+//   }
+//   for (let i in arr2) {
+//     newArr2 += arr2[i];
+//   }
+//   return newArr1 + newArr2;
+// }
+// console.log(findSum([3, 5, 2, 9, 4], [6, 2, 8, 1, 3]));
+
+// 49.== Shift an array by X to right.
+// Example [1,2,3,4,5] after shifting to right [5,1,2,3,4]
+// function shiftArray(data) {
+//   let newData = data[data.length].push(data.slice(0, data.length - 1));
+//   return newData;
+// }
+// console.log(shiftArray([1, 2, 3, 4, 5]));
