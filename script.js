@@ -543,4 +543,42 @@
 // let result = replaceCharacters(inputString, char1, char2);
 // console.log(result); // Output: hella warld
 
-// 43.== Given an input string S that contains multiple words, you need to remove all the spaces present in the input string. There can be multiple spaces present after any word
+// 43.== Reverse the given string word wise. That is, the last word in given string should come at 1st place, last second word at 2nd place and so on. Individual words should remain as it is. example: Input : Welcome to NeoG Camp → Camp NeoG to Welcome
+
+// function reverseStr(str) {
+//   let ans = str.split(" ").reverse().join(" ");
+//   return ans;
+// }
+// console.log(reverseStr("kamal sharma how are you"));
+
+// 44.== A program that counts the value of each character and prints the most repeated character?
+// JavaScript program for the above approach
+
+// function getMaxOccurringChar(str) {
+//   let mp = new Map();
+//   let n = str.length;
+//   // to store answer
+//   let ans;
+//   // than another elements count
+//   let cnt = 0;
+//   // traverse the string
+//   for (let i = 0; i < n; i++) {
+//     // push element into map and increase its frequency
+//     mp.set(str[i], (mp.get(str[i]) || 0) + 1);
+//     // update answer and count
+//     if (cnt < mp.get(str[i])) {
+//       ans = str[i];
+//       cnt = mp.get(str[i]);
+//     }
+//   }
+
+//   return ans;
+// }
+
+// // Driver Code
+// let str = "sample string";
+// console.log("Max occurring character is: " + getMaxOccurringChar(str));
+
+// 45.== Write a program to toggle case of each character of the string "good afternoon" (example: "neogcamp" ⇒ "nEoGcAmP" )
+function toggleCase(str) {}
+console.log(toggleCase("hello world"));

@@ -525,4 +525,11 @@ There is javascript interview quetions.
     let result = replaceCharacters(inputString, char1, char2);
     console.log(result); // Output: hella warld
 
-39. Given an input string S that contains multiple words, you need to remove all the spaces present in the input string. There can be multiple spaces present after any word
+39. Reverse the given string word wise. That is, the last word in given string should come at 1st place, last second word at 2nd place and so on. Individual words should remain as it is. example: Input : Welcome to NeoG Camp → Camp NeoG to Welcome?
+    function reverseStr(str) {
+    let ans = str.split(" ").reverse().join(" ");
+    return ans;
+    }
+    console.log(reverseStr("kamal sharma how are you"));
+
+40.
